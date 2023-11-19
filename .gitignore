@@ -1,9 +1,48 @@
-.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.0.2/darwin_amd64/README.md
-.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.0.2/darwin_amd64/LICENSE
-.terraform/providers/registry.terraform.io/hashicorp/aws/5.24.0/darwin_amd64/terraform-provider-aws_v5.24.0_x5
-.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.0.2/darwin_amd64/CHANGELOG.md
-extra/providers.tf
-extra/variables.tf
-.terraform.lock.hcl
-.terraform.tfstate
-.terraform.tfstate.backup
+# This is a minimal list, OK to add things per repo
+# mac specific
+.DS_Store
+.ansible
+.azure/
+.bash_history
+# don't check storage creds into GH
+.boto
+.cache
+*.code-workspace
+#  may contain gcloud files
+.config
+.gitconfig
+.local
+# .netrc contains secrets for service tokens
+.netrc
+*.plan
+.sentinel
+# .ssh dir may contain private keys
+.ssh
+.terrascan
+# Terraform dot files
+.terraform
+.terraformrc
+**/.terraform/*
+.terraform.d
+*.tfstate
+*.tfstate.*
+.vscode
+.idea
+.idea
+
+# Palo auth codes
+authcodes
+# Crash log files
+crash.log
+credentials.json
+# Palo specific
+init-cfg.txt
+temp
+terraform.rc
+tmp
+# Auto variables
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
